@@ -2,18 +2,23 @@
   "name": "purescript",
   "version": "0.0.0",
   "moduleType": [
-    "globals"
+    "node"
   ],
   "license": "MIT",
-    "private": true,
-    "dependencies": {
-        "purescript-math": "0.1.0"
-    },
+  "private": true,
+  "dependencies": {
+    "purescript-math": "0.1.0",
+    "purescript-lists": "~0.5.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
+  ],
+  "homepage": "https://github.com/ForNeVeR/purescript-playground",
+  "authors": [
+    "Friedrich von Never <friedrich@fornever.me>"
   ]
 }
