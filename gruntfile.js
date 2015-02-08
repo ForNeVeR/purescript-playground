@@ -5,16 +5,17 @@ module.exports = function (grunt) {
         psc: {
             options: {
                 main: "Chapter2",
-                modules: ["Chapter2"]
+                modules: ["Chapter2", "PhoneBook"]
             },
             all: {
                 src: ["<%=srcFiles%>"],
                 dest: "dist/Main.js"
             }
-        }
+        },
+        dotPsci: ["<%=srcFiles%>"]
     });
 
     grunt.loadNpmTasks("grunt-purescript");
 
-    grunt.registerTask("default", ["psc:all"]);
+    grunt.registerTask("default", ["psc:all", "dotPsci"]);
 };
